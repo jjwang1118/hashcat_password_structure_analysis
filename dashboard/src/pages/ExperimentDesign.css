@@ -799,7 +799,29 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .round-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .formula-section {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
+  .design {
+    padding: 0 0.5rem;
+  }
+
+  .design-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .design-header p {
+    font-size: 0.95rem;
+  }
+
   .pros-cons {
     grid-template-columns: 1fr;
   }
@@ -810,10 +832,101 @@
   
   .design-tabs {
     gap: 0.25rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
   
   .tab-btn {
     padding: 0.75rem 1rem;
     font-size: 0.875rem;
+    flex-shrink: 0;
+  }
+
+  .section-card {
+    padding: 1rem;
+  }
+
+  .round-card {
+    padding: 1rem;
+  }
+
+  .round-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .params-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .param-item {
+    padding: 0.75rem;
+  }
+
+  .stats-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .stat-box {
+    padding: 0.75rem;
+  }
+
+  .password-examples {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .example-card {
+    padding: 0.75rem;
+  }
+
+  .formula-card {
+    padding: 1rem;
+  }
+
+  .calculation {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .design-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .design-header p {
+    font-size: 0.85rem;
+  }
+
+  .tab-btn {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .section-card,
+  .round-card,
+  .formula-card {
+    padding: 0.75rem;
+  }
+
+  .round-header h3 {
+    font-size: 1rem;
+  }
+
+  .param-item,
+  .stat-box,
+  .example-card {
+    padding: 0.6rem;
+  }
+
+  .param-label,
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .param-value,
+  .stat-value {
+    font-size: 0.9rem;
   }
 }

@@ -11,8 +11,18 @@ function App() {
 
   return (
     <Router>
-      <div className="app">
-        <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
+      <div className={`app ${sidebarOpen ? 'sidebar-open' : ''}`}>
+        <Sidebar 
+          isOpen={sidebarOpen} 
+          setIsOpen={setSidebarOpen} 
+        />
+        {/* 移動端點擊遮罩關閉側邊欄 */}
+        {sidebarOpen && (
+          <div 
+            className="sidebar-overlay"
+            onClick={() => setSidebarOpen(false)}
+          />
+        )}
         <main className={`main-content ${sidebarOpen ? 'shifted' : ''}`}>
           <Header toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
           <div className="content-wrapper">
@@ -37,6 +47,13 @@ function Sidebar({ isOpen, setIsOpen }) {
     { path: '/results', icon: BarChart3, label: '數據結果' },
   ]
 
+  // 在移動端點擊導航項後自動關閉側邊欄
+  const handleNavClick = () => {
+    if (window.innerWidth <= 768) {
+      setIsOpen(false)
+    }
+  }
+
   return (
     <aside className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
       <div className="sidebar-header">
@@ -55,6 +72,7 @@ function Sidebar({ isOpen, setIsOpen }) {
               to={item.path}
               className={`nav-item ${isActive ? 'active' : ''}`}
               title={item.label}
+              onClick={handleNavClick}
             >
               <Icon size={20} />
               {isOpen && <span>{item.label}</span>}

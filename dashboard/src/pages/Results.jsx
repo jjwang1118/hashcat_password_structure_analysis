@@ -1,7 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Area, AreaChart, ComposedChart, Cell } from 'recharts'
 import { TrendingUp, BarChart3, Clock, Zap, Info, Activity, CheckCircle } from 'lucide-react'
 import './Results.css'
+
+// 響應式圖表高度 Hook
+function useResponsiveHeight(desktopHeight) {
+  const [height, setHeight] = useState(desktopHeight)
+
+  useEffect(() => {
+    const updateHeight = () => {
+      if (window.innerWidth <= 480) {
+        setHeight(desktopHeight * 0.7) // 小屏幕減少30%
+      } else if (window.innerWidth <= 768) {
+        setHeight(desktopHeight * 0.85) // 平板減少15%
+      } else {
+        setHeight(desktopHeight)
+      }
+    }
+
+    updateHeight()
+    window.addEventListener('resize', updateHeight)
+    return () => window.removeEventListener('resize', updateHeight)
+  }, [desktopHeight])
+
+  return height
+}
 
 function Results() {
   const [activeCategory, setActiveCategory] = useState('length')
@@ -67,6 +90,7 @@ function Results() {
 
 function LengthAnalysis() {
   const [selectedRound, setSelectedRound] = React.useState('total');
+  const chartHeight = useResponsiveHeight(450);
   
   // 自定義箱型圖組件
   const BoxPlot = (props) => {
@@ -265,7 +289,7 @@ function LengthAnalysis() {
           <Info size={16} />
           <span>樣本數: {lengthTimeData.map(d => `${d.length}字符=${d.n}個`).join(', ')}</span>
         </div>
-        <ResponsiveContainer width="100%" height={450}>
+        <ResponsiveContainer width="100%" height={chartHeight}>
           <BarChart data={lengthTimeData} margin={{ top: 20, right: 30, left: 20, bottom: 20 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#333" />
             <XAxis 
@@ -358,7 +382,7 @@ function LengthAnalysis() {
           <Info size={16} />
           <span>每增加一個字符的額外時間成本與增長率</span>
         </div>
-        <ResponsiveContainer width="100%" height={400}>
+        <ResponsiveContainer width="100%" height={chartHeight * 0.9}>
           <BarChart data={marginalData} margin={{ top: 30, right: 30, left: 20, bottom: 20 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#333" />
             <XAxis 
@@ -514,7 +538,7 @@ function LengthAnalysis() {
           <Info size={16} />
           <span>比較不同特殊字符數量時，基礎長度從 8→9 和 9→10 的邊際時間成本</span>
         </div>
-        <ResponsiveContainer width="100%" height={380}>
+        <ResponsiveContainer width="100%" height={chartHeight}>
           <ComposedChart 
             data={[
               { specialChars: '+1', transition89: 38.8, transition910: 354.1, growth89: 275.0, growth910: 669.4 },
@@ -730,6 +754,7 @@ function LengthAnalysis() {
 function SpecialCharAnalysis() {
   const [selectedLength, setSelectedLength] = React.useState('8');
   const [selectedRound, setSelectedRound] = React.useState('total');
+  const chartHeight = useResponsiveHeight(380);
   
   // 完整的箱型圖數據 (包含 min, q1, med, q3, max, avg, n)
   const allRoundData = {
@@ -1249,6 +1274,8 @@ function SpecialCharAnalysis() {
 }
 
 function DiversityAnalysis() {
+  const chartHeight = useResponsiveHeight(400);
+  
   // 自定義箱型圖組件
   const BoxPlot = (props) => {
     const { x, y, width, height, payload, index } = props;
@@ -1571,6 +1598,8 @@ function DiversityAnalysis() {
 }
 
 function PositionAnalysis() {
+  const chartHeight = useResponsiveHeight(450);
+  
   // 自定義箱型圖組件
   const BoxPlot = (props) => {
     const { x, y, width, height, payload, index } = props;
@@ -1794,7 +1823,7 @@ function PositionAnalysis() {
           <Info size={16} />
           <span>比較不同特殊字符位置的平均破解時間</span>
         </div>
-        <ResponsiveContainer width="100%" height={350}>
+        <ResponsiveContainer width="100%" height={chartHeight * 0.78}>
           <BarChart data={avgTimeData} margin={{ top: 30, right: 30, left: 20, bottom: 20 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#333" />
             <XAxis 
@@ -1975,6 +2004,8 @@ function PositionAnalysis() {
 }
 
 function Summary() {
+  const chartHeight = useResponsiveHeight(450);
+  
   const recommendations = [
     {
       level: '🟢 安全',
