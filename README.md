@@ -27,7 +27,13 @@
 
 ## 🚀 快速開始
 
-### 啟動 Dashboard
+### 在線查看 Dashboard
+
+訪問已部署的線上版本：
+
+**🌐 https://jjwang1118.github.io/hashcat_password_structure_analysis/**
+
+### 本地啟動 Dashboard
 
 \`\`\`bash
 cd dashboard
