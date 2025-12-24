@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom'
 import { Activity, Database, FileText, BarChart3, Menu, X } from 'lucide-react'
 import Dashboard from './pages/Dashboard'
@@ -7,7 +7,22 @@ import Results from './pages/Results'
 import './App.css'
 
 function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(true)
+  // 根據屏幕大小設置側邊欄初始狀態
+  const [sidebarOpen, setSidebarOpen] = useState(() => {
+    return window.innerWidth > 768
+  })
+
+  // 監聽屏幕大小變化
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setSidebarOpen(false)
+      }
+    }
+    
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   return (
     <Router>
