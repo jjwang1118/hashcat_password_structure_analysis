@@ -64,7 +64,7 @@
 
 .objectives-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
 }
@@ -800,6 +800,11 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+  .objectives-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
   .round-grid {
     grid-template-columns: 1fr;
   }
@@ -837,6 +842,11 @@
     grid-template-columns: 1fr;
   }
   
+  .objectives-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
   .design-tabs {
     gap: 0.25rem;
     overflow-x: auto;
@@ -966,6 +976,27 @@
   .design-header p {
     font-size: 0.85rem;
     line-height: 1.4;
+  }
+
+  .objectives-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .objective-card {
+    padding: 1rem;
+  }
+
+  .obj-icon {
+    font-size: 2.25rem;
+  }
+
+  .obj-title {
+    font-size: 0.95rem;
+  }
+
+  .obj-desc {
+    font-size: 0.8rem;
   }
 
   .design-tabs {
@@ -1153,13 +1184,34 @@
   }
 
   .design-header h1 {
-    font-size: 1.1rem;
-    line-height: 1.2;
+    font-size: 1.15rem;
+    line-height: 1.25;
   }
 
   .design-header p {
-    font-size: 0.8rem;
-    line-height: 1.3;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .objectives-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .objective-card {
+    padding: 0.75rem;
+  }
+
+  .obj-icon {
+    font-size: 2rem;
+  }
+
+  .obj-title {
+    font-size: 0.9rem;
+  }
+
+  .obj-desc {
+    font-size: 0.75rem;
   }
 
   .design-tabs {
