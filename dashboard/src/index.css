@@ -256,5 +256,34 @@ body {
     gap: 0.75rem;
   }
 }
+
+/* Extra small devices (phones, 360px and down) */
+@media (max-width: 360px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .card {
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+
+  .grid {
+    gap: 0.5rem;
+  }
+
+  button, .btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}
   }
 }

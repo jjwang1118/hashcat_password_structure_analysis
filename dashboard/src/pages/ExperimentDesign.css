@@ -1140,3 +1140,187 @@
     font-size: 0.85rem;
   }
 }
+
+/* Extra small mobile devices (360px and down) */
+@media (max-width: 360px) {
+  .design {
+    padding: 0;
+  }
+
+  .design-header {
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .design-header h1 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .design-header p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .design-tabs {
+    padding: 0 0.25rem 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tab-btn {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .tab-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .section-card,
+  .round-card,
+  .formula-card,
+  .pros-cons-card {
+    padding: 0.6rem;
+    margin: 0 0.25rem 0.5rem;
+  }
+
+  .section-title {
+    font-size: 0.9rem;
+    gap: 0.3rem;
+  }
+
+  .section-title svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .round-header h3 {
+    font-size: 0.9rem;
+  }
+
+  .round-badge {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .params-grid {
+    gap: 0.4rem;
+  }
+
+  .param-item {
+    padding: 0.5rem;
+  }
+
+  .param-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .param-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .param-label {
+    font-size: 0.75rem;
+  }
+
+  .param-value {
+    font-size: 0.85rem;
+  }
+
+  .stats-row {
+    gap: 0.4rem;
+  }
+
+  .stat-box {
+    padding: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .stat-value {
+    font-size: 0.85rem;
+  }
+
+  .password-examples {
+    gap: 0.4rem;
+  }
+
+  .example-card {
+    padding: 0.5rem;
+  }
+
+  .example-label {
+    font-size: 0.7rem;
+  }
+
+  .example-password {
+    font-size: 0.8rem;
+  }
+
+  .example-time {
+    font-size: 0.7rem;
+  }
+
+  .formula-card {
+    padding: 0.6rem;
+  }
+
+  .formula-title {
+    font-size: 0.85rem;
+    gap: 0.3rem;
+  }
+
+  .formula-title svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .calculation {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .pros-cons {
+    gap: 0.5rem;
+  }
+
+  .pros-cons-card {
+    padding: 0.6rem;
+  }
+
+  .pros-cons-card h4 {
+    font-size: 0.85rem;
+  }
+
+  .pros-cons-card ul {
+    gap: 0.3rem;
+  }
+
+  .pros-cons-card li {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    padding-left: 1rem;
+  }
+
+  .round-grid {
+    gap: 0.5rem;
+    padding: 0 0.25rem;
+  }
+
+  .objective-section {
+    padding: 0.6rem;
+  }
+
+  .objective-section h3 {
+    font-size: 0.9rem;
+  }
+
+  .objective-section p {
+    font-size: 0.8rem;
+  }
+}

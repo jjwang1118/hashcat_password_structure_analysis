@@ -1098,6 +1098,251 @@ table tbody tr:last-child td {
     font-size: 0.7rem !important;
   }
 }
+
+/* Extra small mobile devices (360px and down) */
+@media (max-width: 360px) {
+  .results {
+    padding: 0;
+  }
+
+  .results-header {
+    padding: 0 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .results-header h1 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .results-header p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .category-tabs {
+    padding: 0 0.25rem 0.5rem;
+    gap: 0.15rem;
+  }
+
+  .category-btn {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.7rem;
+    gap: 0.15rem;
+  }
+
+  .category-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .chart-card,
+  .card {
+    padding: 0.5rem;
+    margin: 0 0.25rem 0.5rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+    gap: 0.3rem;
+  }
+
+  .card-title svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .chart-description,
+  .chart-note {
+    padding: 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .chart-description svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .chart-insights {
+    gap: 0.4rem;
+  }
+
+  .insight-item {
+    padding: 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .insight-value {
+    font-size: 1rem;
+  }
+
+  .insight-label {
+    font-size: 0.7rem;
+  }
+
+  .length-btn,
+  .round-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .level-card,
+  .position-card {
+    padding: 0.75rem;
+  }
+
+  .level-badge {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .level-types,
+  .position-label {
+    font-size: 0.875rem;
+  }
+
+  .level-example,
+  .level-charset,
+  .level-time,
+  .position-desc,
+  .position-example,
+  .position-time {
+    font-size: 0.75rem;
+  }
+
+  .finding-item {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .finding-icon {
+    font-size: 1.25rem;
+  }
+
+  .finding-title {
+    font-size: 0.85rem;
+  }
+
+  .finding-desc {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .finding-box {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .finding-number {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .finding-content h4 {
+    font-size: 0.85rem;
+  }
+
+  .finding-content p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .key-stat-card {
+    padding: 0.75rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-title {
+    font-size: 0.85rem;
+  }
+
+  .stat-desc {
+    font-size: 0.75rem;
+  }
+
+  .recommendation-card {
+    padding: 0.75rem;
+  }
+
+  .rec-level {
+    font-size: 0.85rem;
+  }
+
+  .rec-badge {
+    font-size: 0.8rem;
+  }
+
+  .rec-time,
+  .rec-desc {
+    font-size: 0.75rem;
+  }
+
+  .practice-card {
+    padding: 0.75rem;
+  }
+
+  .practice-icon {
+    font-size: 1.75rem;
+  }
+
+  .practice-title {
+    font-size: 0.85rem;
+  }
+
+  .practice-desc {
+    font-size: 0.75rem;
+  }
+
+  .conclusion-card {
+    padding: 0.75rem;
+  }
+
+  .conclusion-intro {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .point {
+    padding: 0.75rem;
+  }
+
+  .point strong {
+    font-size: 0.85rem;
+  }
+
+  .point p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .final-recommendation {
+    padding: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .final-recommendation strong {
+    font-size: 0.875rem;
+  }
+
+  .card table {
+    font-size: 0.7rem !important;
+    min-width: 480px;
+  }
+
+  .card table th {
+    padding: 0.4rem 0.3rem !important;
+    font-size: 0.65rem !important;
+  }
+
+  .card table td {
+    padding: 0.4rem 0.3rem !important;
+    font-size: 0.7rem !important;
+  }
+}
 /* New Styles for Updated Components */
 
 /* Length Selector */

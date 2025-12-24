@@ -728,3 +728,131 @@
     padding: 0.75rem;
   }
 }
+
+/* Extra small mobile devices (360px and down) */
+@media (max-width: 360px) {
+  .dashboard {
+    padding: 0;
+  }
+
+  .dashboard-header {
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .dashboard-header p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .stats-grid {
+    gap: 0.4rem;
+    padding: 0 0.25rem;
+  }
+
+  .stat-card {
+    padding: 0.6rem;
+  }
+
+  .stat-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .stat-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .stat-value {
+    font-size: 1.35rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .stat-change {
+    font-size: 0.7rem;
+  }
+
+  .mode-stats {
+    gap: 0.3rem;
+  }
+
+  .mode-item {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .mode-item svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .gpu-item {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .gpu-item svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .finding-card,
+  .chart-card {
+    padding: 0.6rem;
+    margin: 0 0.25rem 0.5rem;
+  }
+
+  .finding-title,
+  .card-title {
+    font-size: 0.85rem;
+    gap: 0.3rem;
+  }
+
+  .card-title svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .finding-list {
+    gap: 0.4rem;
+  }
+
+  .finding-list li {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    padding-left: 1rem;
+  }
+
+  .timeline-item {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .timeline-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 0.8rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.75rem;
+  }
+
+  .dashboard-grid {
+    gap: 0.5rem;
+    padding: 0 0.25rem;
+  }
+}
