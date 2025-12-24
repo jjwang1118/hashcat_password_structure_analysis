@@ -31,7 +31,7 @@
 
 訪問已部署的線上版本：
 
-**🌐 https://hashcat-password-structure-analysis-five.vercel.app/**
+**🌐 (https://hashcat-password-structure-analysis-five.vercel.app/)**
 
 ### 本地啟動 Dashboard
 
