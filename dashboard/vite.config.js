@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/hashcat_password_structure_analysis/',
+  base: process.env.VERCEL ? '/' : '/hashcat_password_structure_analysis/',
   server: {
     port: 3002,
     open: true
