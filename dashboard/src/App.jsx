@@ -31,8 +31,8 @@ function App() {
           isOpen={sidebarOpen} 
           setIsOpen={setSidebarOpen} 
         />
-        {/* 移動端點擊遮罩關閉側邊欄 */}
-        {sidebarOpen && (
+        {/* 移動端點擊遮罩關閉側邊欄 (只在平板和手機模式下顯示) */}
+        {sidebarOpen && window.innerWidth <= 768 && (
           <div 
             className="sidebar-overlay"
             onClick={() => setSidebarOpen(false)}
