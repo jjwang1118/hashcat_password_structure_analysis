@@ -1,0 +1,21 @@
+{
+    "Attack_Mode": "Mask Attack (3)",
+    "Attack_Payload": "?l?l?l?l?l?l?d?d",
+    "Hybrid_Mask": null,
+    "Status": "Cracked",
+    "Max_Time_Limit_Seconds": 54000,
+    "Guess.Mask": "?l?l?l?l?l?l?d?d",
+    "Progress": [
+        1799782400,
+        30891577600
+    ],
+    "Hashcat_Reported_Time_Seconds": 0,
+    "Actual_Runtime_Seconds": 12.73,
+    "Estimated_Left_Seconds": 0,
+    "Last_Update": "2025-12-02 15:37:19",
+    "Started": "2025-12-02 15:37:07",
+    "Finished": "2025-12-02 15:37:20",
+    "Command": "C:\\Users\\$TMK000-1A7EC9ECGV29\\Documents\\hashcat-7.1.2\\hashcat.exe -m 100 -d 1 C:\\Users\\$TMK000-1A7EC9ECGV29\\Documents\\hashcat-7.1.2\\exam\\round1\\hash.txt -w 4 -a 3 ?l?l?l?l?l?l?d?d --status --status-json --status-timer=60 -O --force",
+    "Process_Exit_Code": 0,
+    "Cracked_Password": "dragon86"
+}

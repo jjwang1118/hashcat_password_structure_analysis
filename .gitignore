@@ -1,0 +1,59 @@
+# Node.js 和 npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# Vite 和 Build
+dist/
+build/
+.vite/
+*.local
+
+# IDE 和編輯器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# 圖片輸出（可選，如果想保留圖片就註解掉）
+# *.png
+# *.jpg
+# *.jpeg
+
+# 大型資料檔案（可選）
+# *.txt
+# *.dict
+
+# 暫存和日誌檔案
+*.log
+*.tmp
+*.temp
+
+# OS 相關
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# 其他
+.env
+.env.local
+.env.*.local

@@ -1,0 +1,21 @@
+{
+    "Attack_Mode": "Mask Attack (3)",
+    "Attack_Payload": "?d?u?u?u?u?u?u?u?u",
+    "Hybrid_Mask": null,
+    "Status": "Cracked",
+    "Max_Time_Limit_Seconds": 54000,
+    "Guess.Mask": "?d?u?u?u?u?u?u?u?u",
+    "Progress": [
+        61215866880,
+        2088270645760
+    ],
+    "Hashcat_Reported_Time_Seconds": 0,
+    "Actual_Runtime_Seconds": 16.41,
+    "Estimated_Left_Seconds": 0,
+    "Last_Update": "2025-12-02 19:44:57",
+    "Started": "2025-12-02 19:44:41",
+    "Finished": "2025-12-02 19:44:57",
+    "Command": "C:\\Users\\$SGL000-9M0BSLOHJQ5O\\Documents\\hashcat-7.1.2\\hashcat.exe -m 100 -d 1 C:\\Users\\$SGL000-9M0BSLOHJQ5O\\Documents\\hashcat-7.1.2\\exam\\round3\\hash.txt -w 4 -a 3 ?d?u?u?u?u?u?u?u?u --status --status-json --status-timer=60 -O --force",
+    "Process_Exit_Code": 0,
+    "Cracked_Password": "2BASEBALL"
+}
