@@ -39,9 +39,14 @@ ENV/
 # *.jpg
 # *.jpeg
 
-# 大型資料檔案（可選）
-# *.txt
-# *.dict
+# 大型資料檔案（超過 GitHub 限制）
+dictionary/dictionary_prew.txt
+dictionary/hashmob.net.medium.found.txt
+dictionary/hashmob.net.user.found.txt
+dictionary/dictionary-100mb.txt
+dictionary/dictionary1.txt
+dictionary/dictionary2.txt
+dictionary/dictionary3.txt
 
 # 暫存和日誌檔案
 *.log
